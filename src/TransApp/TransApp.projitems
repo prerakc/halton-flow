@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{CD2EA3FE-0957-436D-98E9-B68BB0E68079}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TransApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)TransApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utility.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formats\ShapeFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formats\TripTimeFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formats\StopFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formats\TripFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formats\Trip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FavouriteContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formats\RouteFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SettingsContent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Formats\" />
+  </ItemGroup>
+</Project>
